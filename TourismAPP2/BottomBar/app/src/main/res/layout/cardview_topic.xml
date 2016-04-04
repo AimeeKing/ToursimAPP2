@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beautyto"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail"
+            android:id="@+id/title"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:text="title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:id="@+id/submittitle"
+            android:textSize="16sp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="@color/secondary_text"
+            android:text="submittitle here"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/submittitle"
+            android:id="@+id/share"
+            android:padding="8dp"
+            style="?attr/borderlessButtonStyle"
+            android:text="分享"
+            ></Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/submittitle"
+            android:layout_toRightOf="@+id/share"
+            android:padding="8dp"
+            style="?attr/borderlessButtonStyle"
+            android:text="点赞"
+            android:id="@+id/button"></Button>
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:animAlphaStart="1"
+            expandableTextView:maxCollapsedLines="1"
+            android:layout_below="@+id/share">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:padding="16dp" />
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
+    </RelativeLayout>
+</LinearLayout>

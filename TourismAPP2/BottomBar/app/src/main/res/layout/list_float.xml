@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <include
+        layout="@layout/searchviewlayout"
+        android:id="@+id/list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </include>
+    <com.yyydjk.library.DropDownMenu
+        android:id="@+id/dropDownMenu"
+        android:layout_below="@+id/list_toolbar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ddmenuTextSize="13sp"
+        app:ddtextUnselectedColor="@color/drop_down_unselected"
+        app:ddtextSelectedColor="@color/drop_down_selected"
+        app:dddividerColor="@color/gray"
+        app:ddunderlineColor="@color/gray"
+        app:ddmaskColor="@color/mask_color"
+        app:ddmenuBackgroundColor="@color/white"
+        app:ddmenuSelectedIcon="@color/gray"
+        app:ddmenuUnselectedIcon="@color/white"
+        />
+    <!--
+    <view
+        android:layout_below="@+id/dropDownMenu"
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_centerInParent="true"
+        />
+-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="false" />
+    <!-- plusIconColor 的颜色就是家好的颜色，Normal  是平时的颜色，而Pressed是按下去的颜色 -->
+
+
+
+
+</RelativeLayout>

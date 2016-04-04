@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toolbar Title"
+            android:textColor="@android:color/white"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <view
+        android:id="@+id/recycle_view"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_centerInParent="true"
+        />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="false" />
+    <!-- plusIconColor 的颜色就是家好的颜色，Normal
+    是平时的颜色，而Pressed是按下去的颜色 -->
+
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:transitionName="floatbutton_a"
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_colorNormal="@color/pink"
+        fab:fab_colorPressed="@color/pink_pressed"
+        fab:fab_plusIconColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
+</RelativeLayout>

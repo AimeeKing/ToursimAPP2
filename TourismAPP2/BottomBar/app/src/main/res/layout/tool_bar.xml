@@ -1,0 +1,84 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+  <Spinner
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/spinner"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        style="@style/MySpinner"
+        android:layout_marginRight="0dp"></Spinner>
+  <!-- <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="@dimen/cardview_default_elevation">
+        <android.widget.SearchView
+            android:iconifiedByDefault="false"
+            android:searchMode="queryRewriteFromText"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+    -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+
+                android:layout_weight="1"
+                android:layout_width="0dp"   
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search_et_input"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@drawable/searchicon"
+                    android:drawablePadding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_edittext_shape"
+                    android:textSize="13sp"
+                    android:textColor="@color/primary_text"
+                    android:textColorHint="@color/secondary_text"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:hint="请输入关键字"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/iv_delete_bg"
+                    android:id="@+id/search_iv_delete"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+<!--另设一个toolbar，这样做的好处在于都可用这个模板-->

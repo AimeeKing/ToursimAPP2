@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">tab_view</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity">activity</string>
+    <string name="home">home</string>
+    <string name="my">my</string>
+    <string name="topic">topic</string>
+    <string name="query">输入活动，地点</string>
+
+
+     <string name="lipsum">Lorem ipsum dolor sit amet, ut duis lorem provident sed felis blandit,
+        condimentum donec lectus ipsum et mauris, morbi porttitor interdum feugiat nulla donec
+        sodales, vestibulum nisl primis a molestie vestibulum quam, sapien mauris metus risus
+        suspendisse magnis. Augue viverra nulla faucibus egestas eu, a etiam id congue rutrum ante
+        , arcu tincidunt donec quam felis at ornare, iaculis ligula sodales venenatis commodo
+        volutpat neque, suspendisse elit praesent tellus felis mi amet. Inceptos amet tempor
+        lectus lorem est non, ac donec ac libero neque mauris, tellus ante metus eget leo
+        consequat. Scelerisque dolor curabitur pretium blandit ut feugiat, amet lacus pulvinar
+        justo convallis ut, sed natoque ipsum urna posuere nibh eu. Sed at sed vulputate sit orci,
+        facilisis a aliquam tellus quam aliquam, eu aliquam donec at molestie ante, pellentesque
+        mauris lorem ultrices libero faucibus porta, imperdiet adipiscing sit hac diam ut nulla.
+        Lacus enim elit pulvinar donec vehicula dapibus, accumsan purus officia cursus dolor sapien,
+        eu amet dis mauris mi nulla ut. Non accusamus etiam pede non urna tempus, vestibulum aliquam
+        tortor eget pharetra sodales, in vestibulum ut justo orci nulla, lobortis purus sem
+        semper consectetuer magni purus. Dolor a leo vestibulum amet ut sit, arcu ut eaque urna
+        fusce aliquet turpis, sed fermentum sed vestibulum nisl pede, tristique enim lorem posuere
+        in laborum ut. Vestibulum id id justo leo nulla, magna lobortis ullamcorper et dignissim
+        pellentesque, duis suspendisse quis id lorem ante. Vivamus a nullam ante adipiscing amet,
+        mi vel consectetuer nunc aenean pede quisque, eget rhoncus dis porttitor habitant nunc vivamus,
+        duis cubilia blandit non donec justo dictumst, praesent vitae nulla nam pulvinar urna. Adipiscing
+        adipiscing justo urna pulvinar imperdiet nullam, vitae fusce rhoncus proin nonummy suscipit,
+        ullamcorper amet et non potenti platea ultrices, mauris nullam sapien nunc justo vel, eu semper
+        pellentesque arcu fusce augue. Malesuada mauris nibh sit a a scelerisque, velit sem lectus tellus
+        convallis consectetuer, ultricies auctor a ante eros amet sed.\\n\\n Risus lacus duis leo platea
+        wisi, felis maecenas rutrum in id in donec, non id a potenti libero eget, posuere elit ea sed
+        pellentesque quis. Sunt lacus urna lorem elit duis, nibh donec purus quisque consectetuer dolor,
+      </string>
+
+    <string name="android5_0_text">谷歌对各版本的系统安装量进行了追踪，去年12月，Android 4.4 KitKat系统的份额从33.9
+        （百分之）升至39.1（百分之），而Android 5.0甚至没有出现在榜单上.\n需要注意的是，谷歌在报告中并没有对份额低
+        于0.1（百分之）的系统进行统计。两 年前发布的Android 4.3 Jelly Bean系统依然占据主导地位，份额为 46（百分之），Android
+        4.0 Ice Cream Sandwich的份额为6.7（百分之），Android 2.3 Gingerbread的份额为 7.8（百分之），Android
+        2.2 Froyo的份额为0.4（百分之）。尽管很多用户尚未用上Android 5.0系统，但这并不妨碍 谷歌的更新不发。\n消息称，谷歌可能
+        会在今年2月发布Android 5.1，更新包括：Android 5.0中缺失的静音模式被重新加入；系统稳定性提升；改进内存管理性能；修复
+        应用突然关闭问题；修复使用Wi-Fi时网络设备过度消耗问题；修复无线网络连接问题。</string>
+
+    <!--给spinner使用的-->
+    <string-array name="city_used_array">
+        <item>杭州</item>
+        <item>厦门</item>
+        <item>余姚</item>
+    </string-array>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_content_activity">content_activity</string>
+    <string name="title_activity_list_activity">list_activity</string>
+    <string name="title_activity_sign_">Sign_Activity</string>
+    <string name="title_activity_add_activity">add_activity</string>
+    <string name="submit">发布</string>
+</resources>

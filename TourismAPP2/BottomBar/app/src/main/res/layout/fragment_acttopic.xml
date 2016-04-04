@@ -1,0 +1,59 @@
+<!--这个界面是放圈子里面的话题的-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.aimee.topic.acttopic_Fragment">
+
+    <view
+        android:id="@+id/recycle_view"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_centerInParent="true"
+        />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="false" />
+    <!-- plusIconColor 的颜色就是家好的颜色，Normal
+    是平时的颜色，而Pressed是按下去的颜色 -->
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiple_actions"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        fab:fab_labelStyle="@style/menu_labels_style">
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/btn_press_color"
+        fab:fab_colorPressed="@color/btn_pressed_color"
+        fab:fab_icon="@drawable/activity_add"
+        android:layout_alignLeft="@id/multiple_actions"
+        android:layout_above="@id/multiple_actions"
+        fab:fab_title="定制活动"
+        />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/multiple_actions"
+        android:layout_above="@id/add_activity"
+        fab:fab_colorNormal="@color/btn_press_color"
+        fab:fab_colorPressed="@color/btn_pressed_color"
+        fab:fab_icon="@drawable/topic_add"
+        fab:fab_title="发个感想"
+        />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>
